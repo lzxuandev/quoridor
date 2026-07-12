@@ -1,77 +1,81 @@
-# Quoridor 游戏
+# Quoridor 
 
-我是一个 C++ 新手。这次的游戏开发完全是出于一时兴起，同时也是为了提升自己的编程能力。开发这个游戏的灵感来自于一个实体下棋的视频，当时觉得很有趣，于是萌生了将其电子化的想法。后来才知道这个游戏其实已经有电子版了，名字叫 **Quoridor**。目前这个游戏项目有些部分还没有完善，尤其是UI界面的部分，但是游戏核心内容大致上已经可以游玩了，游戏中判断玩家可选路径可能会有小小的bug。请多多包含！
+I am a C++ beginner. The development of this game was entirely driven by a sudden impulse and a desire to improve my programming skills. The inspiration came from a video of a physical board game, which I found fascinating and wanted to digitalize. Later, I discovered that this game already existed in digital form under the name **Quoridor**. Currently, some parts of the project are still unpolished—especially the UI—but the core gameplay is mostly playable. There might be minor bugs in the pathfinding logic for valid player moves. Your understanding is greatly appreciated!
 
-<img src="https://github.com/user-attachments/assets/4d1792de-d2ec-4e9c-beb5-cc24ac4e05d3" alt="游戏截图 1" width="30%" />
+## Development Process
 
+During development, I utilized **DeepSeek AI** to help solve repetitive problems and conceptual algorithms, which significantly shortened my development time and boosted efficiency. However, the core game logic and technical implementation were still achieved by myself through several days of work. Given my limited experience, some aspects might not have turned out exactly as expected; I appreciate your patience. The screenshot below shows an early development build before the improved art style was adopted:
 
-## 开发过程
-在开发过程中，我使用了 **AI DeepSeek** 来协助解决一些重复性问题和概念算法，大大缩短了我的开发时间提高了效率。不过，游戏的核心逻辑和技术仍然是我自己耗时几天时间实现的。尽管如此，由于我的经验有限，某些部分没有达到预期，还望谅解。以下图片是早期开发时候生成的程序尚未采用较好的游戏画风：
+## Inspiration & Design
 
+* The game's art style and design were inspired by [@quoridorstrategy].
+* During development, I learned to use the **raylib** library to implement graphics and interaction logic.
 
-<img src="https://github.com/user-attachments/assets/79b91668-735d-458c-b40d-3dbc263f422b" alt="游戏截图 2" width="50%" />
+## Game Rules
 
+Quoridor is a two-player strategic board game where the objective is to be the first to reach the opponent's starting baseline.
 
+### Game Objectives
 
+* **Player 1 (White)**: Starts from the left border of the board and aims to reach the right border.
+* **Player 2 (Black)**: Starts from the right border of the board and aims to reach the left border.
 
-## 游戏灵感与设计
-- 游戏的画风和设计参考了 [@quoridorstrategy]
-- 开发过程中，学习了使用 raylib 库来实现图形化和交互逻辑。
+### Controls & Instructions
 
-## 游戏规则
-Quoridor 是一个双人策略游戏，目标是第一个到达对方的目标行。
-
-### 游戏目标
-- **玩家 1（白色）**：从棋盘左边边界出发，目标是到达右边边界。
-- **玩家 2（黑色）**：从棋盘右边边界出发，目标是到达左边边界。
-
-### 操作说明
-1. **移动棋子**：
-   - 点击自己的棋子，然后点击一个高亮的格子来移动。
-   - 棋子可以上下左右移动一格。
-   - 如果对手的棋子挡住你的路，你可以跳过它（前提是跳过去的位置是空的）。
-
-2. **放置墙壁**：
-   - 按 `Q` 和 `E` 键可以切换墙壁的方向（水平或垂直）。
-   - 点击单词BLACK和WHITE可以进入预览模式并放置墙壁。
-   - 点击棋盘上的格子来放置墙壁。
-   - 墙壁会阻挡对手的移动路线，但不能完全封死对手的路径。
-
-3. **胜利条件**：
-   - 第一个到达目标行的玩家获胜！
-<img src="https://github.com/user-attachments/assets/e6a51b92-387c-4e76-a182-bdc6c05a7521" alt="游戏截图 3" width="50%" />
+1. **Moving the Pawn**:
+* Click on your pawn, then click on a highlighted square to move.
+* Pawns can move one square horizontally or vertically (up, down, left, right).
+* If an opponent's pawn blocks your path, you can jump over it (provided the square behind it is empty).
 
 
-## 如何运行游戏
-1. 下载最新的 Release 文件（`quoridor-v1.0.0.zip`）。
-2. 解压文件。
-3. 运行 `main.exe` 启动游戏。
+2. **Placing Walls**:
+* Press the `Q` and `E` keys to toggle the wall direction (horizontal or vertical).
+* Click on the text "BLACK" or "WHITE" to enter preview mode and place walls.
+* Click on the board grids to place a wall.
+* Walls block the opponent's movement, but you cannot completely block off their path to the goal.
 
-## 开发环境
-- 编程语言：C++
-- 图形库：raylib
-- 开发工具：Visual Studio Code 
-- AI 协助：DeepSeek（用于解决部分技术问题和优化代码）
 
-## 已知问题
-- 由于我是新手开发者，游戏中可能会存在一些小 bug。
-- UI 界面还在优化中，部分功能可能不够完善。
+3. **Winning Condition**:
+* The first player to reach their respective target baseline wins!
 
-## 未来计划
-- 优化 UI 界面，提升用户体验。
-- 修复已知 bug，提升游戏稳定性。
-- 添加 AI 对手模式。
-- 增加更多游戏模式（例如计时赛、多人模式等）。
 
-## 反馈与支持
-如果你在游戏中遇到问题，或者有任何建议，欢迎在 GitHub 上提交 Issue，或者直接联系我。
 
-## 感谢
-- 感谢 [@quoridorstrategy] 提供的灵感。
-- 感谢 raylib 社区提供的强大支持。
-- 感谢游戏创造者 [Mirko Marchesi]
-- 感谢免费资源提供网站[https://mixkit.co/free-sound-effects/click/]
+## How to Run the Game
+
+1. Download the latest release file (`quoridor-v1.0.0.zip`).
+2. Extract the zip file.
+3. Run `main.exe` to launch the game.
+
+## Development Environment
+
+* **Programming Language**: C++
+* **Graphics Library**: raylib
+* **Development Tool**: Visual Studio Code
+* **AI Assistance**: DeepSeek (used for code optimization and solving certain technical issues)
+
+## Known Issues
+
+* As a beginner developer, minor bugs may still be present in the game.
+* The UI is still being optimized, and some features might feel unpolished.
+
+## Future Plans
+
+* Optimize the UI for a better user experience.
+* Fix known bugs and improve game stability.
+* Implement an AI opponent mode.
+* Add more game modes (e.g., time trials, multiplayer modes, etc.).
+
+## Feedback & Support
+
+If you encounter any issues during gameplay or have any suggestions, feel free to open an Issue on GitHub or contact me directly.
+
+## Acknowledgments
+
+* Thanks to [@quoridorstrategy] for the inspiration.
+* Thanks to the raylib community for their incredible support.
+* Thanks to the game creator [Mirko Marchesi].
+* Thanks to the free audio resource platform [Mixkit](https://mixkit.co/free-sound-effects/click/) for the click sound effects.
 
 ---
 
-**祝大家玩得开心！**
+**Have fun playing!**
