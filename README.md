@@ -2,9 +2,15 @@
 
 I am a C++ beginner. The development of this game was entirely driven by a sudden impulse and a desire to improve my programming skills. The inspiration came from a video of a physical board game, which I found fascinating and wanted to digitalize. Later, I discovered that this game already existed in digital form under the name **Quoridor**. Currently, some parts of the project are still unpolished—especially the UI—but the core gameplay is mostly playable. There might be minor bugs in the pathfinding logic for valid player moves. Your understanding is greatly appreciated!
 
+<img src="https://github.com/user-attachments/assets/4d1792de-d2ec-4e9c-beb5-cc24ac4e05d3" alt="游戏截图 1" width="30%" />
+
+
 ## Development Process
 
 During development, I utilized **DeepSeek AI** to help solve repetitive problems and conceptual algorithms, which significantly shortened my development time and boosted efficiency. However, the core game logic and technical implementation were still achieved by myself through several days of work. Given my limited experience, some aspects might not have turned out exactly as expected; I appreciate your patience. The screenshot below shows an early development build before the improved art style was adopted:
+
+<img src="https://github.com/user-attachments/assets/79b91668-735d-458c-b40d-3dbc263f422b" alt="游戏截图 2" width="50%" />
+
 
 ## Inspiration & Design
 
@@ -38,6 +44,7 @@ Quoridor is a two-player strategic board game where the objective is to be the f
 3. **Winning Condition**:
 * The first player to reach their respective target baseline wins!
 
+<img src="https://github.com/user-attachments/assets/e6a51b92-387c-4e76-a182-bdc6c05a7521" alt="游戏截图 3" width="50%" />
 
 
 ## How to Run the Game
